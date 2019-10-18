@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  featureDisplayed = 1;
   title = 'FoodList';
+  onOptionSelected(n: number) {
+    this.featureDisplayed = n;
+  }
 }
